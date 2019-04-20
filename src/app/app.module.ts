@@ -7,6 +7,8 @@ import { AppComponent } from '@app/app.component';
 import { HeroesComponent } from '@app/components/heroes/heroes.component';
 import { HeroDetailsComponent } from '@app/components/hero-details/hero-details.component';
 import { MessagesComponent } from './components/messages/messages.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -14,10 +16,12 @@ import { MessagesComponent } from './components/messages/messages.component';
     HeroesComponent,
     HeroDetailsComponent,
     MessagesComponent,
+    DashboardComponent,
   ],
   imports: [
 			BrowserModule,
-			FormsModule
+			FormsModule,
+			AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
